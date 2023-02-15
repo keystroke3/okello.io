@@ -1,6 +1,8 @@
-# okello.io
+<h1 align="center">OKELLO.IO</h1>
+<p align="center">
+    <img width="200" alt="Alacritty Logo" src="public/okello.svg">
+</p>
 
-Code for my simple landing page
-
-## [okello.io](https://okello.io)
+<h2 align="center">The code for my landing page</h2>
+<a align="center" href="https://okello.io"> <h2>okello.io</h2> </a>
 
