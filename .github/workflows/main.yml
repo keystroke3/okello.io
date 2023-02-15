@@ -1,0 +1,17 @@
+name: Deploy main site
+
+on:
+    push:
+        branches: [main]
+
+jobs:
+    build:
+        runs-on: [self-hosted, primera-main]
+        steps:
+            - uses: actions/checkout@v2
+            - name: Install Dependencies
+              run: |
+                  yarn install --prefer-local
+            - name: Yarn Build
+              run: |
+                  yarn build
