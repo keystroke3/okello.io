@@ -3,7 +3,7 @@
 	line-height: 1.5;
 	font-weight: 400;
 
-	color-scheme: light dark;
+	color-scheme: dark light;
 	--color-fg: rgba(255, 255, 255, 0.87);
 	--color-green: hsl(95, 38%, 62%);
 	color: var(--color-fg);
@@ -39,6 +39,7 @@ a {
 }
 a:hover {
 	color: #535bf2;
+	text-decoration: underline;
 }
 
 body {
@@ -79,8 +80,9 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
 	:root {
+		--color-green: hsl(95, 38%, 40%);
 		color: #213547;
-		background-color: #ffffff;
+		background-color: hsl(0, 0%, 95%);
 	}
 	a:hover {
 		color: #747bff;
