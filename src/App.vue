@@ -1,10 +1,6 @@
-<script setup lang="ts">
-import Logo from './assets/okello.svg'
-</script>
-
 <template>
   <div class="main">
-    <img :src="Logo" alt="logo" />
+    <img src="./assets/okello.svg" alt="logo" />
     <h1> Hola, I am Ted</h1>
     <h2>My Tools</h2>
     <ul class="tools">
@@ -23,11 +19,11 @@ import Logo from './assets/okello.svg'
     <ul class="socials">
       <li>
         <p>Github</p>
-        <a href="https://github.com/keystroke3" target="_blank" rel="noopener noreferrer">keystroke3</a>
+        <a href="https://github.com/keystroke3" target="_blank" rel="noopener noreferrer">@keystroke3</a>
       </li>
       <li>
         <p>Twitter</p>
-        <a href="https://twitter.com/keystroke_3" target="_blank" rel="noopener noreferrer">keystroke_3</a>
+        <a href="https://twitter.com/keystroke_3" target="_blank" rel="noopener noreferrer">@keystroke_3</a>
       </li>
       <li>
         <p>My Dev Blog</p>
@@ -35,7 +31,7 @@ import Logo from './assets/okello.svg'
       </li>
       <li>
         <p>Email</p>
-        <a href="mailto:keystroke33@gmail.com">keystroke33@gmail.com</a>
+        <a href="mailto:contact@okello.io">contact@okello.io</a>
       </li>
     </ul>
   </div>
