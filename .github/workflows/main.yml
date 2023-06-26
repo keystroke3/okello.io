@@ -1,19 +1,23 @@
 name: Deploy main site
 
 on:
-    push:
-        paths-ignore:
-            - "**/README.md"
-        branches: [main]
+  push:
+    paths-ignore:
+      - "**/README.md"
+    branches: [main]
 
 jobs:
-    build:
-        runs-on: [self-hosted, primera-main]
-        steps:
-            - uses: actions/checkout@v2
-            - name: Install Dependencies
-              run: |
-                  yarn install --prefer-local
-            - name: Yarn Build
-              run: |
-                  yarn build
+  build:
+    runs-on: [self-hosted, primera-main]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: |
+          yarn install --prefer-local
+      - name: Yarn Build
+        run: |
+          yarn build
+      - name: Move files
+        run: |
+          test -d /var/www/okello/site && rm /var/www/okello/site
+          mv -f dist/ /var/www/okello/site
