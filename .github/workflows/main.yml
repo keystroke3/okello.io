@@ -19,5 +19,5 @@ jobs:
           yarn build
       - name: Move files
         run: |
-          test -d /var/www/okello/site && rm /var/www/okello/site
+          test -d /var/www/okello/site && rm -r /var/www/okello/site
           mv -f dist/ /var/www/okello/site
