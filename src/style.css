@@ -92,7 +92,7 @@ p{
 	:root {
 		/* --color-fg: rgba(32, 32, 32, 0.87); */
 
-		--color-fg: rgba(54, 54, 54, 0.164);
+		--color-fg: rgba(54, 54, 54, 1);
 		--color-fg-alt: rgba(160, 160, 160, 0.164);
 		--color-bg: rgb(241, 241, 241);
 		--color-bg-alt: rgb(255, 255, 255);
