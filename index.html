@@ -1,32 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Okello.io</title>
-		<meta charset="UTF-8" />
-		<meta property="og:title" content="Teddy Okello" />
-		<meta name="twitter:title" content="Teddy Okello" />
+  <head>
+    <title>Okello.io</title>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Teddy Okello" />
+    <meta name="twitter:title" content="Teddy Okello" />
 
-		<meta
-			name="description"
-			content="I am a software and web developer working with Golang, Python and Typescript"
-		/>
-		<meta
-			property="og:description"
-			content="I am a software and web developer working with Golang, Python and Typescript"
-		/>
-		<meta
-			name="twitter:description"
-			content="I am a software and web developer working with Golang, Python and Typescript"
-		/>
-		<meta property="og:type" content="website" />
-		<meta property="og:image" content="https://assets.okello.io/images/preview-banner.png" />
-		<meta name="twitter:image" content="https://assets.okello.io/images/okello.io-logo.png" />
+    <meta
+      name="description"
+      content="I am a software and web developer working with Golang, Python and Typescript"
+    />
+    <meta
+      property="og:description"
+      content="I am a software and web developer working with Golang, Python and Typescript"
+    />
+    <meta
+      name="twitter:description"
+      content="I am a software and web developer working with Golang, Python and Typescript"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://assets.okello.io/images/preview-banner.png"
+    />
+    <meta
+      name="twitter:image"
+      content="https://assets.okello.io/images/okello.io-logo.png"
+    />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/svg+xml" href="/okello.svg" />
-	</head>
-	<body>
-		<div id="app"></div>
-		<script type="module" src="/src/main.ts"></script>
-	</body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/okello.svg" />
+    <script type="text/javascript">
+      //<![CDATA[
+      var owa_baseUrl = "https://owa.okello.io/";
+      var owa_cmds = owa_cmds || [];
+      owa_cmds.push(["setSiteId", "7a7bf181a6b9ab7b9fd07950792d4d1e"]);
+      owa_cmds.push(["trackPageView"]);
+      owa_cmds.push(["trackClicks"]);
+
+      (function () {
+        var _owa = document.createElement("script");
+        _owa.type = "text/javascript";
+        _owa.async = true;
+        owa_baseUrl =
+          "https:" == document.location.protocol
+            ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, "https:")
+            : owa_baseUrl;
+        _owa.src = owa_baseUrl + "modules/base/dist/owa.tracker.js";
+        var _owa_s = document.getElementsByTagName("script")[0];
+        _owa_s.parentNode.insertBefore(_owa, _owa_s);
+      })();
+      //]]>
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
